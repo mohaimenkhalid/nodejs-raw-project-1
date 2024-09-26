@@ -1,7 +1,9 @@
 const handler = {}
 
-handler.sampleHandler = () => {
-    console.log("sample route")
+handler.sampleHandler = (requestProperties, callback) => {
+    callback(200, {
+        message: "successful"
+    })
 }
 
 module.exports = handler;
